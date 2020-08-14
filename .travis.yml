@@ -7,3 +7,7 @@ python:
 
 # Faz a instalação com Sudo, para ter privilégio de Super Usuário.
 sudo: required
+
+script:
+  - echo "ok"
+  
