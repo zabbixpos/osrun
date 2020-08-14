@@ -12,5 +12,5 @@ install:
 sudo: required
 
 script:
-  - echo "ok"
+  - travis encrypt MY_SECRET_ENV=super_secret -r zabbixpos/osrun
   
