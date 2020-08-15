@@ -2,9 +2,8 @@ language: bash
 
 sudo: required
 
+install:
+    - gem install travis
+
 script:
     - bash teste.sh
-    - apt-get update
-    - apt-get install ruby-dev libffi-dev make gcc -y
-    - sudo gem install travis
-    - echo "y" | travis
