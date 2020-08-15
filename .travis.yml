@@ -10,3 +10,13 @@ install:
 
 script:
     - bash teste.sh
+    
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  edge: true
+  api-key: 
+    secure: r4k1qeaYKMlSJQs1s+Kvp+gVGBOYBLbuJ7ocmFlBJgFWzfM/ySB/CUwkmRhSTyqUMI+eO/zJ0UHiO9vkhspG+U+WGI0mNDqrtBw3inMxi/dilOESitv1H9wzcRa4AdumrjronPqqweJIaYv97Z0lwvkmMeDdw+CAGX10KUdLmWgrTZzuLlTrGDc2+K1Blx6PB+q8imhmt9eGdn/4uX8HvJ2//IvZbEL8wOYRVdXIgR+wJ4tHk7EZLK8gQ0hKDjya54ZdX4H5fowb6moN/jGtjDkE0GnNUTAHjXtkxq/KsRXLSFrL77QhBDfk4iBmELRn4+T4gByIjKG7c+31m8FvrLNH8RFox4Op+VN1mOFy0G32e8E2IvWEyeQDVRnffx7fc9zNlxFZ+mCPa61jAP6aZJm/ZH2n5UasMHHexojOY33lTBNFUGzGFn6hTweamR3kF/+bfvRzEp1y2j5b6N2tYcieiM+9lfVz9B4x6uDmozJAzuLN+vjshfh7/vtECWzoAXJagHOS+ft5Osrmxs6sWjH2o5I9yYw19wSbBn7fCIzEa6ME+YuKNHI9srQ5uPgO3pmDwPp15rJZBWV4QLJNWrEm1x+m3d3tJOxffn5rFZpNFZzbQXFFkbbcPTizEbtA953tYI6HKUOlSfObLy5er0g6mqUzjvUn5Lkf+JKDOQM=
+  app: zabbixpos
+  on:
+    repo: zabbixpos/teste
