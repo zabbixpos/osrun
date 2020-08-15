@@ -1,16 +1,4 @@
-# Linguagem utilizada.
-language: python
-
-# Versão que a aplicação suporta.
-python:
-  - "3.6.3"
-
-install:
-  - gem install --user travis
-  
-# Faz a instalação com Sudo, para ter privilégio de Super Usuário.
-sudo: required
+language: bash
 
 script:
-  - travis encrypt MY_SECRET_ENV=super_secret -r zabbixpos/osrun
-  
+    - bash teste.sh
