@@ -11,8 +11,6 @@ git:
 # Define the php versions against we want to test our code
 php:
     - 7.0
-script:
-    - bash teste.sh
     
 deploy:
   provider: heroku
