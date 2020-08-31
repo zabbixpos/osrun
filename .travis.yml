@@ -4,18 +4,14 @@ language: php
 os:
   - linux
 
-# git configs
-git:
-  depth: 1
-
 # Define the php versions against we want to test our code
 php:
     - 7.4.9
     
 deploy:
   provider: heroku
-#  skip_cleanup: true
-#  edge: true
+  skip_cleanup: true
+  edge: true
   api-key: 
     secure: cAnmJrybDFf3mkYN1k2qeLBKZQG9oMDn4HoHcBNpFOJoD0MIOeqPkfYNiMuLh9qE0f0XUhFFt3ZRsO8iD7PML8/JlwXWo3nlfVPMDuCVzUt9T/W6yy24lcg2UEWlNF1ccgxFC1ZR/6uAZahIFMyqZUTbueG/e1pbz9rtqFyqUybRokmj9L3v9uNTlavxuKgiS15twQ2SQb6I9Mm/sopUFqlFPlvWN9liIFuPoy5g+p/NrIVrqrE3vYH4h4BTg0C3OPigZE0TJGAg1oXyw5BYK3vBpeR/S+vfDKazMLBJ5/3pEG8QGzobhraenlfyjfp7cb5I360IR+Nev5IDqo+YSzfE7N+2YPzt5v8rJy9QRq91r4wtag+m1YVAL/BfOKz78GEENJpNzwZhmiis3KBI+yrMuJetZEf9EKmvPiFEW7hfQaevEvc/1WnAtdtCaYEGkPRhGrxpoGoo5lXrBdcbQd5ky3SDj6rJH5vvjeumaroadIRc79rmeXm6mK7a7kC9LpgZL+qzuwwdyZ7hF4Kihf3RNm9lG9TPhfBYtigLCRqL4OeH8Kc8EpoX5/KYuhbQkuO4YYDTpDplU2NiarPRPj+uVZNz+E9jIaDxGk032Yo7DlOalgRC9cXU6Ct8XAP8T/9cPxH4w+8I6neZ0U2f9r54DKvz9nuoMipmQ/dokfs=
   app: osrun
